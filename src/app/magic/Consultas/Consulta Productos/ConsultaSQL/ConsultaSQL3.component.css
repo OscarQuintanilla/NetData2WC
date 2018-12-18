@@ -1,0 +1,60 @@
+/*this is a component css*/
+.ConsultaSQL3Props {}
+
+.Label1Props {
+    overflow: hidden;
+}
+
+.SalirProps {}
+
+.Table3TableContainerProps {}
+
+.Table3Props {
+    border: lightskyblue solid 1px;
+}
+
+.Table3_table_rowProps {}
+
+.Table3_table_rowProps:hover {
+    background-color: #EEEEEE;
+}
+
+.selected {
+    background: #F5F5F5;
+}
+
+.Column4Props {}
+
+.mat-column-Column4 {}
+
+.CodBarraProps {}
+
+.Column5Props {}
+
+.mat-column-Column5 {}
+
+.DescripcionProps {}
+
+.Column6Props {}
+
+.mat-column-Column6 {}
+
+.UnidadProps {}
+
+.Column7Props {}
+
+.mat-column-Column7 {}
+
+.UXPProps {}
+
+.Column8Props {}
+
+.mat-column-Column8 {}
+
+.ModeloProps {}
+
+.Column9Props {}
+
+.mat-column-Column9 {}
+
+.DescripcionLProps {}

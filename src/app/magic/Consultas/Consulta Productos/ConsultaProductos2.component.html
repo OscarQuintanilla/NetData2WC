@@ -1,0 +1,44 @@
+<form novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" magic="ConsultaProductos2" class="ConsultaProductos2Props">
+        <div style="display: flex; flex-direction: row">
+            <label magic="Label1" class="Label1Props">
+                <h1>CONSULTA PRODUCTOS</h1>
+            </label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <mat-form-field class="txtCodigoProps">
+                <div>
+                    <input matInput placeholder="Código:" magic="txtCodigo" formControlName="txtCodigo" pattern="^.{0,20}$">
+                    <div *ngIf="(screenFormGroup.get('txtCodigo').dirty) && (
+screenFormGroup.get('txtCodigo').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('txtCodigo') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <mat-form-field class="txtDescripcionProps multiline">
+                <div>
+                    <textarea matInput placeholder="Descripción:" magic="txtDescripcion" formControlName="txtDescripcion"
+                        pattern="^.{0,75}|m{0,75}$">
+</textarea>
+                    <div *ngIf="(screenFormGroup.get('txtDescripcion').dirty) && (
+screenFormGroup.get('txtDescripcion').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('txtDescripcion') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <button mat-raised-button color="primary" magic="btnBuscar" class="btnBuscarProps">
+                Buscar</button>
+        </div>
+
+    </div>
+    <mat-card>
+        <magic-subform magic="Subform8" class="Subform8Props">
+        </magic-subform>
+    </mat-card>
+</form>

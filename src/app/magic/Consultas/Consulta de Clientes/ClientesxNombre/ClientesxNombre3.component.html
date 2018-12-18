@@ -1,0 +1,110 @@
+<form
+    novalidate
+    [formGroup]="screenFormGroup"
+>
+    <div
+        style="display: flex; flex-direction: column"
+        magic="ClientesxNombre3"
+        class="ClientesxNombre3Props"
+    >
+        <div style="display: flex; flex-direction: row">
+            <label
+                magic="Label1"
+                class="Label1Props"
+            >
+                CONSULTA CLIENTE</label>
+            <div *ngIf="mg.isImageExists('Salir')">
+                <img
+                    magic="Salir"
+                    [matTooltip]="mg.getTitle('Salir')"
+                    class="SalirProps"
+                    [src]="mg.getImage('Salir')"
+                />
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <div class="example-container mat-elevation-z8 Table3TableContainerProps">
+                <mat-table
+                    #table
+                    [dataSource]="dataSource"
+                    class="Table3Props"
+                    matSort
+                    matSortDisableClear
+                    (matSortChange)="tableService.sortData($event)"
+                >
+                    <ng-container
+                        magic="Column4"
+                        matColumnDef="Column4"
+                    >
+                        <mat-header-cell
+                            *matHeaderCellDef
+                            mat-sort-header
+                        > Código </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="Codigo"
+                                    [rowId]="row.rowId"
+                                    class="CodigoProps hidden_border"
+                                >
+                                    {{mg.getValue('Codigo', row.rowId)
+}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container
+                        magic="Column5"
+                        matColumnDef="Column5"
+                    >
+                        <mat-header-cell
+                            *matHeaderCellDef
+                            mat-sort-header
+                        > Nombre </mat-header-cell>
+                        <mat-cell
+                            *matCellDef="let row"
+                            magicMark="magicTableRowContainer"
+                        >
+                            <div
+                                style="display: flex; flex-direction: row"
+                                *ngIf="mg.ifRowCreated(row)"
+                            >
+                                <label
+                                    magic="Descripcion"
+                                    [rowId]="row.rowId"
+                                    class="DescripcionProps hidden_border"
+                                >
+                                    {{mg.getValue('Descripcion', row.rowId)
+}}</label>
+                            </div>
+                        </mat-cell>
+                    </ng-container>
+                    <mat-header-row
+                        *matHeaderRowDef="displayedColumns"
+                        class="Table3_table_headerRowProps"
+                    ></mat-header-row>
+                    <mat-row
+                        *matRowDef="let row; columns: displayedColumns;"
+                        class="Table3_table_rowProps"
+                        [ngClass]="{ 'selected': selection.isSelected(row)}"
+                        magicMark="magicTableRowContainer"
+                        (click)="tableService.selectRow(row.rowId)"
+                    >
+                    </mat-row>
+                </mat-table>
+                <mat-paginator
+                    #paginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    (page)="tableService.mgOnPaginateChange($event)"
+                >
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</form>

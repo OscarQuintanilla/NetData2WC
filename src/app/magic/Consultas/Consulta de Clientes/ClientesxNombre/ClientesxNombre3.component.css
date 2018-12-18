@@ -1,0 +1,36 @@
+/*this is a component css*/
+.ClientesxNombre3Props {}
+
+.Label1Props {
+    overflow: hidden;
+}
+
+.SalirProps {}
+
+.Table3TableContainerProps {}
+
+.Table3Props {
+    border: lightskyblue solid 1px;
+}
+
+.Table3_table_rowProps {}
+
+.Table3_table_rowProps:hover {
+    background-color: #EEEEEE;
+}
+
+.selected {
+    background: #F5F5F5;
+}
+
+.Column4Props {}
+
+.mat-column-Column4 {}
+
+.CodigoProps {}
+
+.Column5Props {}
+
+.mat-column-Column5 {}
+
+.DescripcionProps {}

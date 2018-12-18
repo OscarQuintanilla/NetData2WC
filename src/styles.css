@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    src: url(/src/assets/fonts/RoundedElegance.ttf);
+    font-family: "Rounded";
+}
+body{
+    font-family: "Rounded";
+    margin: 0%;
+}

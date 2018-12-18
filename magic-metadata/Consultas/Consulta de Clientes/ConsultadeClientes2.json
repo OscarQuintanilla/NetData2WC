@@ -1,0 +1,194 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ConsultadeClientes2",
+		"component_path":	"Consultas/Consulta de Clientes/",
+		"component_uniquename":	"Consulta_de_Clientes_ConsultadeClientes2"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	529,
+		"height":	224
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	2,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"Label1",
+				"text":	"CONSULTA DE CLIENTES",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	529,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Salir",
+				"tooltip":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"U",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	485,
+				"y":	0,
+				"width":	40,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label3",
+				"text":	"Código:",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	75,
+				"width":	49,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"txtCodigo",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	2,
+				"directive":	"alphadirective",
+				"pattern":	"^.{0,20}$",
+				"attribute":	"A",
+				"common_line_id":	"line75"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	75,
+				"width":	144,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Label5",
+				"text":	"Nombre:",
+				"common_line_id":	"line114"
+			},
+			"coordinates":	{
+				"x":	10,
+				"y":	114,
+				"width":	75,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	1,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"txtDescripcion",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	3,
+				"directive":	"alphadirective",
+				"pattern":	"^.{0,60}$",
+				"attribute":	"A",
+				"common_line_id":	"line114"
+			},
+			"coordinates":	{
+				"x":	95,
+				"y":	114,
+				"width":	424,
+				"height":	20
+			},
+			"hint":	null,
+			"controlType":	"T",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnBuscar",
+				"tab_order":	4,
+				"format":	"Buscar",
+				"attribute":	"A",
+				"common_line_id":	"line166"
+			},
+			"coordinates":	{
+				"x":	146,
+				"y":	166,
+				"width":	113,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"btnLimpia",
+				"enabled":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"tab_order":	5,
+				"format":	"Limpia",
+				"common_line_id":	"line166"
+			},
+			"coordinates":	{
+				"x":	270,
+				"y":	166,
+				"width":	113,
+				"height":	23
+			},
+			"hint":	null,
+			"controlType":	"B",
+			"children":	null
+		}
+	]
+}

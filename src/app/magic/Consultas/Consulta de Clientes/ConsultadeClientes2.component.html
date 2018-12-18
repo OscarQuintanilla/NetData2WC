@@ -1,0 +1,39 @@
+<form novalidate [formGroup]="screenFormGroup">
+    <div style="display: flex; flex-direction: column" magic="ConsultadeClientes2" class="ConsultadeClientes2Props">
+        <div style="display: flex; flex-direction: row">
+            <label magic="Label1" class="Label1Props">
+                <h1>CONSULTA DE CLIENTES</h1></label>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <mat-form-field class="txtCodigoProps">
+                <div>
+                    <input matInput placeholder="Código:" magic="txtCodigo" formControlName="txtCodigo" pattern="^.{0,20}$" alphadirective>
+                    <div *ngIf="(screenFormGroup.get('txtCodigo').dirty) && (
+screenFormGroup.get('txtCodigo').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('txtCodigo') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row">
+            <mat-form-field class="txtDescripcionProps">
+                <div>
+                    <input matInput placeholder="Nombre:" magic="txtDescripcion" formControlName="txtDescripcion" pattern="^.{0,60}$"
+                        alphadirective>
+                    <div *ngIf="(screenFormGroup.get('txtDescripcion').dirty) && (
+screenFormGroup.get('txtDescripcion').hasError('pattern')
+)">
+                        <p>{{ mg.getErrMsg('txtDescripcion') }}</p>
+                    </div>
+                </div>
+            </mat-form-field>
+        </div>
+        <div style="display: flex; flex-direction: row" id="botonera" >
+            <button mat-raised-button color="primary" magic="btnBuscar" class="btnBuscarProps">
+                Buscar</button>
+            <button mat-raised-button color="primary" magic="btnLimpia" class="btnLimpiaProps" [disabled]="mg.isDisabled('btnLimpia' )">
+                Limpia</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,41 @@
+.ConsultaProductos2Props {
+    background-color: #FFF;
+    box-shadow: 0px 10px 25px #777;
+    width: 50%;
+    padding: 3% 0%;
+    margin: 3% auto;
+
+}
+
+.Label1Props {
+    margin: auto;
+    overflow: hidden;
+}
+
+.Label3Props {
+    overflow: hidden;
+}
+
+.txtCodigoProps {
+    margin: auto;
+    width: 90%;
+}
+
+.Label5Props {
+    overflow: hidden;
+}
+
+.txtDescripcionProps {
+    margin: auto;
+    width: 90%;
+}
+
+.btnBuscarProps {
+    margin: auto;
+}
+
+.Subform8Props {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}

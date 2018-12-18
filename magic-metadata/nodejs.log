@@ -1,0 +1,30 @@
+Generation output:
+
+D:\Documentos\Magic_Projects\NetData2WC>echo off 
+copying files
+
+
+
+D:\Documentos\Magic_Projects\NetData2WC>echo off 
+generating components
+[V-CLI] cmd.exe /c ng g @magic-xpa/cli:magic --skip-install
+Number of components to generate: 2,  params project: undefined theme: undefined allowTesting: undefined
+*** Step 1: Loading JSON files. ***
+[>] Loading JSON file Consultas/Consulta Productos/ConsultaProductos2.json
+[>] Loading JSON file Consultas/Consulta Productos/ConsultaSQL/ConsultaSQL3.json
+*** Step 2: Processing JSON files. ***
+[>] Processing JSON file for component ConsultaProductos2
+[>] Processing JSON file for component ConsultaSQL3
+*** Step 3: generate components. (2 components) ***
+[>] Step 4: components-list.
+UPDATE src/app/magic/Consultas/Consulta Productos/ConsultaProductos2.component.ts (399 bytes)
+UPDATE src/app/magic/Consultas/Consulta Productos/ConsultaProductos2.component.html (2620 bytes)
+UPDATE src/app/magic/Consultas/Consulta Productos/ConsultaProductos2.component.css (256 bytes)
+UPDATE src/app/magic/Consultas/Consulta Productos/ConsultaSQL/ConsultaSQL3.component.ts (1587 bytes)
+UPDATE src/app/magic/Consultas/Consulta Productos/ConsultaSQL/ConsultaSQL3.component.html (8770 bytes)
+UPDATE src/app/magic/Consultas/Consulta Productos/ConsultaSQL/ConsultaSQL3.component.css (686 bytes)
+UPDATE src/app/magic/component-list.g.ts (1638 bytes)
+
+
+
+Generation warnings/errors:

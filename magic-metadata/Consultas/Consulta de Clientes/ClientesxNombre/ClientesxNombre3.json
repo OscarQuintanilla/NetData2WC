@@ -1,0 +1,188 @@
+{
+	"style":	null,
+	"props":	{
+		"id":	"ClientesxNombre3",
+		"window_type":	12,
+		"component_path":	"Consultas/Consulta de Clientes/ClientesxNombre/",
+		"component_uniquename":	"Consulta_de_Clientes_ClientesxNombre_ClientesxNombre3"
+	},
+	"coordinates":	{
+		"x":	0,
+		"y":	0,
+		"width":	423,
+		"height":	538
+	},
+	"hint":	null,
+	"controlType":	null,
+	"children":	[
+		{
+			"style":	{
+				"alignment":	{
+					"horizontal":	2,
+					"vertical":	null
+				}
+			},
+			"props":	{
+				"id":	"Label1",
+				"text":	"CONSULTA CLIENTE",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	0,
+				"width":	419,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"L",
+			"children":	null
+		},
+		{
+			"style":	null,
+			"props":	{
+				"id":	"Salir",
+				"tooltip":	{
+					"value":	null,
+					"has_exp":	true
+				},
+				"attribute":	"U",
+				"common_line_id":	"line0"
+			},
+			"coordinates":	{
+				"x":	378,
+				"y":	0,
+				"width":	40,
+				"height":	39
+			},
+			"hint":	null,
+			"controlType":	"I",
+			"children":	null
+		},
+		{
+			"style":	{
+				"line_divider":	true
+			},
+			"props":	{
+				"id":	"Table3",
+				"table_row_height":	21,
+				"table_title_height":	20,
+				"scroll_bar":	false,
+				"common_line_id":	"line41"
+			},
+			"coordinates":	{
+				"x":	0,
+				"y":	41,
+				"width":	418,
+				"height":	497
+			},
+			"hint":	null,
+			"controlType":	"A",
+			"children":	[
+				{
+					"style":	{
+						"alignment":	{
+							"horizontal":	2,
+							"vertical":	null
+						}
+					},
+					"props":	{
+						"id":	"Column4",
+						"column_title":	"Código",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	98
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	{
+								"border":	false,
+								"alignment":	{
+									"horizontal":	1,
+									"vertical":	null
+								}
+							},
+							"props":	{
+								"id":	"Codigo",
+								"tab_order":	1,
+								"modifiable":	{
+									"value":	true,
+									"has_exp":	true
+								},
+								"allow_parking":	true,
+								"pattern":	"^.{0,10}$",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line63"
+							},
+							"coordinates":	{
+								"x":	5,
+								"y":	63,
+								"width":	91,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				},
+				{
+					"style":	{
+						"alignment":	{
+							"horizontal":	2,
+							"vertical":	null
+						}
+					},
+					"props":	{
+						"id":	"Column5",
+						"column_title":	"Nombre",
+						"sortable":	true,
+						"is_table_child":	true,
+						"web_style":	2
+					},
+					"coordinates":	{
+						"width":	315
+					},
+					"hint":	null,
+					"controlType":	"K",
+					"children":	[
+						{
+							"style":	{
+								"border":	false,
+								"alignment":	{
+									"horizontal":	1,
+									"vertical":	null
+								}
+							},
+							"props":	{
+								"id":	"Descripcion",
+								"tab_order":	2,
+								"allow_parking":	true,
+								"pattern":	"^.{0,100}$",
+								"attribute":	"A",
+								"is_table_child":	true,
+								"web_style":	2,
+								"common_line_id":	"line63"
+							},
+							"coordinates":	{
+								"x":	103,
+								"y":	63,
+								"width":	310,
+								"height":	16
+							},
+							"hint":	null,
+							"controlType":	"T",
+							"children":	null
+						}
+					]
+				}
+			]
+		}
+	]
+}
